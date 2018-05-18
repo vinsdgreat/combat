@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 39270ffc989a5cf41acac5ba8daf7520
+timeCreated: 1498261536
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: L_Arm
+    21300002: Neck
+    21300004: Head
+    21300006: R_Arm
+    21300008: L_Arm_Lower
+    21300010: Chest
+    21300012: R_Arm_Low
+    21300014: R_Hand
+    21300016: L_Leg
+    21300018: R_Leg
+    21300020: M16
+    21300022: L_Leg_Lower
+    21300024: R_Leg_Lower
+    21300026: L_Hand
+    21300028: L_Foot
+    21300030: R_Foot
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L_Arm
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 474
+        width: 115
+        height: 225
+      alignment: 9
+      pivot: {x: 0.47826084, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Neck
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 515
+        width: 73
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 488.99997
+        width: 221
+        height: 210.00003
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51190484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: R_Arm
+      rect:
+        serializedVersion: 2
+        x: 547.00006
+        y: 450.00003
+        width: 119.99994
+        height: 224.99997
+      alignment: 9
+      pivot: {x: 0.49999973, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_Arm_Lower
+      rect:
+        serializedVersion: 2
+        x: 1.9999995
+        y: 322
+        width: 144
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Chest
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 198
+        width: 214
+        height: 288
+      alignment: 9
+      pivot: {x: 0.50934577, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: R_Arm_Low
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 290
+        width: 143
+        height: 106
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: R_Hand
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 303
+        width: 98
+        height: 68.99997
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_Leg
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 187.99998
+        width: 70
+        height: 120.000015
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: R_Leg
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 187
+        width: 70
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M16
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 13
+        width: 610
+        height: 203
+      alignment: 9
+      pivot: {x: 0.50409836, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_Leg_Lower
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 75
+        width: 60
+        height: 99
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: R_Leg_Lower
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 77
+        width: 60
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_Hand
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 81
+        width: 135
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_Foot
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 87
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: R_Foot
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 88
+        height: 59.000008
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45762706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 98190067830152
+  assetBundleName: 
+  assetBundleVariant: 
