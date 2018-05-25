@@ -204,6 +204,76 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 27.45, y: 1.83}
   m_EdgeRadius: 0
+--- !u!1 &415895638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 415895640}
+  - component: {fileID: 415895639}
+  m_Layer: 0
+  m_Name: MuzzleFlash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &415895639
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 415895638}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -2118536617
+  m_SortingLayer: 2
+  m_SortingOrder: 15
+  m_Sprite: {fileID: 21300000, guid: c283cf38877205442b1bad1fdee032dc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.4, y: 4.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+--- !u!4 &415895640
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 415895638}
+  m_LocalRotation: {x: -0, y: -0, z: -0.004509121, w: -0.99998987}
+  m_LocalPosition: {x: 1.0200855, y: 0.011181362, z: 0}
+  m_LocalScale: {x: 0.14923908, y: 0.14923908, z: 0.14923905}
+  m_Children: []
+  m_Father: {fileID: 1844101597}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &687974835
 Prefab:
   m_ObjectHideFlags: 0
@@ -627,7 +697,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.18
+  orthographic size: 2.89
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -790,9 +860,134 @@ Prefab:
       propertyPath: m_Name
       value: BlackMamba_withAK
       objectReference: {fileID: 0}
+    - target: {fileID: 4374453366895054, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.12517703
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374453366895054, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.99213445
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611144576169840, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.1724136
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611144576169840, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9850247
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986370111851528, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.571274
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509792205423852, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.9517137
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509792205423852, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.30698723
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394907864474628, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.97365314
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394907864474628, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.22803426
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647190486846352, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.98078537
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647190486846352, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.19508989
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454953942180736, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.7614315
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454953942180736, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.6482454
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986370111851528, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.8207594
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129241454139570, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.8628745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129241454139570, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.5054182
+      objectReference: {fileID: 0}
+    - target: {fileID: 114681965906353934, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: m_Length
+      value: 0.21000023
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586347528915858, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: m_Length
+      value: 0.22000052
+      objectReference: {fileID: 0}
+    - target: {fileID: 114357516223712932, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: m_Length
+      value: 0.2488312
+      objectReference: {fileID: 0}
+    - target: {fileID: 114923387666758802, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: m_Length
+      value: 0.19556578
+      objectReference: {fileID: 0}
+    - target: {fileID: 114031700478898152, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: m_Length
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114361530242168238, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: m_Length
+      value: 0.23000051
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864692319096064, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: m_Length
+      value: 0.20867889
+      objectReference: {fileID: 0}
+    - target: {fileID: 114417162768483522, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: m_Length
+      value: 0.17595923
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241632334176614, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1142849041854220, guid: bdd7040fd54116841b854e57a990d042,
+        type: 2}
+    - target: {fileID: 114825857547436724, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: m_AirControl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241632334176614, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+        type: 2}
+      propertyPath: muzzleFlashRend
+      value: 
+      objectReference: {fileID: 415895639}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1844101597 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4509481455440968, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+    type: 2}
+  m_PrefabInternal: {fileID: 1436825293}
 --- !u!4 &1944805896 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4472500924325526, guid: 0bfa7dd22566dc943813bb5cb15590ce,
