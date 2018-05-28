@@ -15,6 +15,7 @@ public class PlayerShoot : MonoBehaviour {
 	public float damage = 25f;
 	public LayerMask whatToHit;
 	public float range = 10f;
+	public float hitForce = 400f;
 
 	float timeFire = 0;
 	PlayerMovement c_movement;
@@ -41,12 +42,43 @@ public class PlayerShoot : MonoBehaviour {
 		Vector2 dir = (c_movement.m_FacingRight) ? Vector2.right : Vector2.left;
 		//RaycastHit2D hit = Physics2D.Raycast(firePos, dir, range, whatToHit);
 		//Debug.DrawRay(firePos, dir * range, Color.blue, 1f);
-		DrawBullet();
+		ShootRay(firePos, dir);
 	}
 
-	void DrawBullet() {
-		Quaternion rot = (c_movement.m_FacingRight) ? Quaternion.Euler(0,0,0) : Quaternion.Euler(0, 180, 0);
-		Instantiate(bulletPrefab, weaponTip.position, rot);
+	void ShootRay(Vector2 origin, Vector2 direction) {
+		RaycastHit2D hit = Physics2D.Raycast(origin, direction, range, whatToHit);
+		Vector2 hitPos;
+		if(hit.collider != null) {
+			
+			if(hit.collider.tag == "BlackMamba") {
+				Debug.Log("We have hit black mamba");
+				hit.collider.gameObject.GetComponent<EnemyHealth>().Damage(damage);
+
+				if(hit.collider.gameObject.GetComponent<Rigidbody2D>() != null) {
+					hit.collider.gameObject.GetComponent<Rigidbody2D>().AddForce(-hit.normal * hitForce);
+				}
+			} else {
+				Debug.Log("We have hit something else");
+			}
+
+			hitPos = hit.point;
+			
+		} else {
+			float xVal = (c_movement.m_FacingRight) ? Vector2.right.x : Vector2.left.x;
+			hitPos = new Vector2(xVal * range, origin.y);
+		}
+		DrawBullet(hitPos);
+	}
+
+	void DrawBullet(Vector2 hitPos) {
+		GameObject bullet = Instantiate(bulletPrefab, weaponTip.position, Quaternion.identity);
+		LineRenderer line = bullet.GetComponent<LineRenderer>();
+		if(line != null) {
+			line.SetPosition(0, weaponTip.position);
+			line.SetPosition(1, hitPos);
+		}
+
+		Destroy(bullet, 0.04f);
 		StartCoroutine(MuzzleFlash(0.02f));
 	}
 
