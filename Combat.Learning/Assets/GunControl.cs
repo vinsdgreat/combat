@@ -12,6 +12,11 @@ public class GunControl : MonoBehaviour {
 		difference.Normalize();
 
 		float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler(0f, 0f, rotZ + rotationOffset);
+		float limitRotZ = Mathf.Clamp(rotZ, -45, 45);
+		//transform.rotation = Quaternion.Euler(0f, 0f, limitRotZ + rotationOffset);
+
+		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, limitRotZ);
+
+		Debug.Log(rotZ);
 	}
 }
