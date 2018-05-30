@@ -5,18 +5,28 @@ using UnityEngine;
 public class GunControl : MonoBehaviour {
 
 	public int rotationOffset = 90;
+	PlayerMovement c_movement;
+	private GameObject torsoBone; 
+	private Transform torsoBoneTransform;
+
+	public void Awake() {
+		c_movement = GetComponent<PlayerMovement>();
+		torsoBone = GameObject.Find("Bones/Hip Bone/Torso Bone");
+		torsoBoneTransform = torsoBone.transform;
+	}
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+
+		int inverter = c_movement.m_FacingRight == true ? 1 : -1;
+		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - torsoBoneTransform.position;
 		difference.Normalize();
 
-		float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+		float rotZ = Mathf.Atan2(difference.y, difference.x*inverter) * Mathf.Rad2Deg;
 		float limitRotZ = Mathf.Clamp(rotZ, -45, 45);
 		//transform.rotation = Quaternion.Euler(0f, 0f, limitRotZ + rotationOffset);
 
-		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, limitRotZ);
+		torsoBoneTransform.localEulerAngles = new Vector3(torsoBoneTransform.localEulerAngles.x, torsoBoneTransform.localEulerAngles.y, limitRotZ);
 
-		Debug.Log(rotZ);
 	}
 }
