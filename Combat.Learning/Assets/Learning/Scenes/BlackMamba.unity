@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 137ebf2d02c66984eae2682fb6966a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationOffset: 90
+  rotationOffset: 0
 --- !u!1 &687584172 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1586263063481940, guid: d3394f929cf89664a931a0f023394ab6,
@@ -1303,6 +1303,10 @@ Prefab:
         type: 2}
       propertyPath: m_AttachedIK
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4472500924325526, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
