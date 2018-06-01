@@ -28,6 +28,10 @@ public class GunControl : MonoBehaviour {
 		//transform.rotation = Quaternion.Euler(0f, 0f, limitRotZ + rotationOffset);
 
 		torsoBoneTransform.localEulerAngles = new Vector3(torsoBoneTransform.localEulerAngles.x, torsoBoneTransform.localEulerAngles.y, limitRotZ);
+		
+		Debug.Log(rotZ);
+		if(Mathf.Abs(rotZ) > 90)
+			c_movement.Flip();
 
 	}
 }
