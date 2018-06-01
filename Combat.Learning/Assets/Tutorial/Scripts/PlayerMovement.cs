@@ -55,12 +55,12 @@ public class PlayerMovement : MonoBehaviour {
         if (m_Grounded || m_AirControl)
         {
             // The Speed animator parameter is set to the absolute value of the horizontal input.
-            m_Anim.SetFloat("Speed", Mathf.Abs(_move));
+            m_Anim.SetFloat("Speed", _move);
 
             // Move the character
             m_Rigidbody2D.velocity = new Vector2(_move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
 
-            // If the input is moving the player right and the player is facing left...
+            /*/ If the input is moving the player right and the player is facing left...
             if (_move > 0 && !m_FacingRight)
             {
                 // ... flip the player.
@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour {
             {
                 // ... flip the player.
                 Flip();
-            }
+            }*/
         }
 
         // If the player should jump...
