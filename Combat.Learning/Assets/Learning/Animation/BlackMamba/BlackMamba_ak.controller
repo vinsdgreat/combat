@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: BlackMamba
+  m_Name: BlackMamba_ak
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -47,7 +47,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 8967d683d1b7a8c42a01a63ffe92cabd, type: 2}
+    m_Motion: {fileID: 7400000, guid: 0aaece8157c44fc4197197963412baa2, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -55,7 +55,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b14b4c9b6b937f34f8358f767ff4ffdf, type: 2}
+    m_Motion: {fileID: 7400000, guid: 42540d655e7037a47a048a5359b01244, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1

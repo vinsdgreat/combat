@@ -6,13 +6,14 @@ public class GunControl : MonoBehaviour {
 
 	public int rotationOffset = 90;
 	PlayerMovement c_movement;
-	private GameObject torsoBone; 
+	[SerializeField]
+	private GameObject player; 
 	private Transform torsoBoneTransform;
 
 	public void Awake() {
 		c_movement = GetComponent<PlayerMovement>();
-		torsoBone = GameObject.Find("Bones/Hip Bone/Torso Bone");
-		torsoBoneTransform = torsoBone.transform;
+		torsoBoneTransform = player.transform.Find("Bones/Hip Bone/Torso Bone");
+		//torsoBoneTransform = torsoBone.transform;
 	}
 	
 	// Update is called once per frame
