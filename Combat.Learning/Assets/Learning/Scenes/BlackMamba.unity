@@ -540,6 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12d5338612332914981cbd83c6e1d945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  muzzleFlashRend: {fileID: 1988727503}
   fireRate: 0
   Damage: 10
   hitForce: 400
@@ -1078,7 +1079,7 @@ Prefab:
       objectReference: {fileID: 303491211}
     - target: {fileID: 1880390244401082, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114825857547436724, guid: 0bfa7dd22566dc943813bb5cb15590ce,
         type: 2}
@@ -1218,5 +1219,10 @@ Transform:
 --- !u!4 &1944805896 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4472500924325526, guid: 0bfa7dd22566dc943813bb5cb15590ce,
+    type: 2}
+  m_PrefabInternal: {fileID: 1436825293}
+--- !u!212 &1988727503 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212205752560529290, guid: 0bfa7dd22566dc943813bb5cb15590ce,
     type: 2}
   m_PrefabInternal: {fileID: 1436825293}
