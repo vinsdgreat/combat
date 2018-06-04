@@ -6,14 +6,14 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerInput : MonoBehaviour {
 
     private PlayerMovement c_movement;  //Reference to PlayerMovement script
-    private PlayerShoot c_shoot;
+    //private PlayerShoot c_shoot;
     private bool isJumping;             //To determine if the player is jumping
 	
 	void Awake()
     {
         //References
         c_movement = GetComponent<PlayerMovement>();
-        c_shoot = GetComponent<PlayerShoot>();
+        //c_shoot = GetComponent<PlayerShoot>();
 	}
 	
 	void Update ()
@@ -25,12 +25,12 @@ public class PlayerInput : MonoBehaviour {
             isJumping = CrossPlatformInputManager.GetButtonDown("Jump");
         }	
 
-        if (Input.GetButtonDown("Fire1") && c_shoot.fireRate == 0) {
+        /*if (Input.GetButtonDown("Fire1") && c_shoot.fireRate == 0) {
             c_shoot.OnShoot();
         }
         if (Input.GetButton("Fire1") && c_shoot.fireRate > 0) {
             c_shoot.OnShoot();
-        }
+        }*/
 	}
 
     private void FixedUpdate()
