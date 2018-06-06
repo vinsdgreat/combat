@@ -25,7 +25,7 @@ public class GunControl : MonoBehaviour {
 
 		float rotZ = Mathf.Atan2(difference.y, difference.x*inverter) * Mathf.Rad2Deg;
 		float limitRotZ = Mathf.Clamp(rotZ, -60, 60);
-		//transform.rotation = Quaternion.Euler(0f, 0f, limitRotZ + rotationOffset);
+		//torsoBoneTransform.rotation = Quaternion.Euler(0f, 0f, limitRotZ + rotationOffset);
 
 		torsoBoneTransform.localEulerAngles = new Vector3(torsoBoneTransform.localEulerAngles.x, torsoBoneTransform.localEulerAngles.y, limitRotZ);
 		

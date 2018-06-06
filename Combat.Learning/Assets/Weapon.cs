@@ -6,14 +6,17 @@ public class Weapon : MonoBehaviour {
 
 	[SerializeField]
 	SpriteRenderer muzzleFlashRend;
+	public Transform BulletPrefab;
+	public Transform HitPrefab;
 
 	public float fireRate = 0;
 	public float Damage = 10;
 	public float hitForce = 400f;
 	public float range = 10f;
 	public LayerMask whatToHit;
-	public Transform BulletPrefab;
 
+	float timetoSpawnEffect = 0;
+	float effectSpawnRate = 10;
 	float timeToFire = 0;
 	Transform firePoint;
 
@@ -48,18 +51,42 @@ public class Weapon : MonoBehaviour {
 		if(hit.collider != null) {
 			Debug.DrawLine(firePointPosition, hit.point, Color.red);
 			Debug.Log("We hit " + hit.collider.name + " and did " + Damage + " damage");
-			hit.collider.gameObject.GetComponent<Rigidbody2D>().AddForce(-hit.normal * hitForce);
-			//hitPos = hit.point;
-		} else {
-			//float xVal = (c_movement.m_FacingRight) ? Vector2.right.x : Vector2.left.x;
-			//hitPos = new Vector2(xVal * range, origin.y);
+			//hit.collider.gameObject.GetComponent<Rigidbody2D>().AddForce(-hit.normal * hitForce);
 		}
 
-		Effect();
+		if(Time.time >= timetoSpawnEffect) {
+			Vector3 hitPos;
+			Vector3 hitNormal;
+
+			if(hit.collider == null) {
+				hitPos = (mousePosition - firePointPosition) * 30;
+				hitNormal = new Vector3(9999,9999,9999);
+			}
+			else {
+				hitPos = hit.point;
+				hitNormal = hit.normal;
+			}
+
+			Effect(hitPos, hit.normal);
+			timetoSpawnEffect = Time.time + 1/effectSpawnRate;
+		}
 	}
 
-	void Effect() {
-		Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
+	void Effect(Vector3 hitPos, Vector3 hitNormal) {
+		Transform trail = Instantiate(BulletPrefab, firePoint.position, firePoint.rotation) as Transform;
+		LineRenderer lr = trail.GetComponent<LineRenderer>();
+
+		if(lr != null) {
+			lr.SetPosition(0, firePoint.position);
+			lr.SetPosition(1, hitPos);
+		}
+		Destroy(trail.gameObject, 0.04f);
+
+		if(hitNormal != new Vector3(9999,9999,9999)) {
+			Transform hitParticle = Instantiate(HitPrefab, hitPos, Quaternion.FromToRotation(Vector3.forward, hitNormal)) as Transform;
+			Destroy(hitParticle.gameObject, 1f);
+		}
+
 		StartCoroutine(MuzzleFlash(0.02f));
 	}
 

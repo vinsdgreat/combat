@@ -541,15 +541,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   muzzleFlashRend: {fileID: 1988727503}
-  fireRate: 0
+  BulletPrefab: {fileID: 4252617441281610, guid: bdd7040fd54116841b854e57a990d042,
+    type: 2}
+  HitPrefab: {fileID: 4898576158160584, guid: d8ee10471f16e05489ed0bcbb4aa5053, type: 2}
+  fireRate: 50
   Damage: 10
   hitForce: 400
   range: 10
   whatToHit:
     serializedVersion: 2
-    m_Bits: 512
-  BulletPrefab: {fileID: 4252617441281610, guid: bdd7040fd54116841b854e57a990d042,
-    type: 2}
+    m_Bits: 768
 --- !u!1 &1237292201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,15 +1089,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4509481455440968, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.14780942
+      value: 0.14867245
       objectReference: {fileID: 0}
     - target: {fileID: 4509481455440968, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9890159
+      value: 0.9888865
       objectReference: {fileID: 0}
     - target: {fileID: 4509481455440968, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 17
+      value: 17.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112502887876648, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658620967117486, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658620967117486, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658620967117486, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658620967117486, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114241632334176614, guid: 0bfa7dd22566dc943813bb5cb15590ce, type: 2}
@@ -1118,7 +1139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 137ebf2d02c66984eae2682fb6966a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationOffset: 90
+  rotationOffset: 0
   player: {fileID: 1606343449}
 --- !u!1 &1941320533
 GameObject:
