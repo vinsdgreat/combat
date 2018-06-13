@@ -8,7 +8,7 @@ public class PhotonConnect : MonoBehaviour {
 
 	public GameObject sectionView1, sectionView2, sectionView3;
 	
-	public void connectToPhoton() {
+	private void Awake() {
 		PhotonNetwork.ConnectUsingSettings (versionName);
 
 		Debug.Log("Connecting to photon...");
